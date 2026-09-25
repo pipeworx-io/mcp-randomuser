@@ -1,14 +1,32 @@
 {
   "name": "@pipeworx/mcp-randomuser",
-  "version": "1.0.0",
-  "description": "MCP server for generating random user profiles via randomuser.me",
+  "version": "1.0.1",
+  "description": "Random User MCP — wraps randomuser.me (free, no auth)",
+  "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "license": "MIT",
+  "bin": {
+    "mcp-randomuser": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "randomuser"],
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-randomuser.git"
+    "url": "git+https://github.com/pipeworx-io/mcp-randomuser.git"
   },
-  "files": ["src"]
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-320da79605dc73fa249ca5c862b4227156df21c7dee2f806559a2232b2d814f1",
+    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+  }
 }
