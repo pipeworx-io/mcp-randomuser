@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/randomuser",
   "title": "Randomuser",
   "description": "Random User MCP — wraps randomuser.me (free, no auth)",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://pipeworx.io/packs/randomuser",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-randomuser",
