@@ -1,0 +1,39 @@
+[
+  {
+    "name": "generate_users",
+    "description": "Generate random user profiles with names, addresses, emails, and photos. Filter by nationality (e.g., \"US\", \"GB\", \"AU\") and specify count for multiple profiles.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number",
+          "description": "Number of users to generate (default 1, max 100)."
+        },
+        "nationality": {
+          "type": "string",
+          "description": "Comma-separated nationality codes to filter by (e.g. \"us,gb,au\"). Supported: AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IN, IR, MX, NL, NO, NZ, RS, TR, UA, US."
+        }
+      }
+    }
+  },
+  {
+    "name": "generate_by_gender",
+    "description": "Generate random user profiles by gender (\"male\" or \"female\"). Returns names, contact info, photos, and demographics. Specify count for multiple profiles.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "gender": {
+          "type": "string",
+          "description": "Gender to filter by. One of: male, female."
+        },
+        "count": {
+          "type": "number",
+          "description": "Number of users to generate (default 1, max 100)."
+        }
+      },
+      "required": [
+        "gender"
+      ]
+    }
+  }
+]
