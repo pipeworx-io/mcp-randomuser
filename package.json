@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-randomuser",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Random User MCP — wraps randomuser.me (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "randomuser",
     "gatewaySlug": "randomuser",
-    "sourceHash": "v1-c0d65d3e9c9f66f14a534b00c9bd92f9c91dd64a2b824d0b3365eac3b0ebcc71",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-ab9508500a4957cf5a3719b31b8ea7f40ed1748be742d2698ad682645b40a344",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
